@@ -2,6 +2,7 @@
 
 - ResNet50 has a accuracy of **46.31%** on completely un-seen data.
 - ResNet18 has a accuracy of **52.63%** on completely un-seen data.
+- ResNet18_Reg includes the regularization techniques (L2, Dropout, Batch norm) and scheduler learning rate. In the model training, the dataset used: Training - balanced augmented data, Validation - 150 out of remaining 190 non-augmented data, Test - 40 remaining.
 
 **Remarks**: The model will perform well on un-seen data, if we will provide a good amount of train dataset to the model. 
          The augmentation method is incressing the size of data set, but they generated images are similar, resulting "Overfitting". 
